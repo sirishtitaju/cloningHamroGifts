@@ -1,0 +1,328 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #fbfbfb;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+button{
+  padding: .6rem;
+  border-radius: 6px;
+  background-color: tomato;
+  color: white;
+  box-shadow: 0 0 2px #333333;
+  margin: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #2776fd;
+}
+button:active{
+  background-color: red;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.sticky{
+  position: sticky;
+  z-index: 9;
+  top: 0;
+}
+
+.nav-list{
+  display: flex;
+  gap:2.8rem;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 1.8rem 6rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0 2px #333333;
+}
+
+.font-light{
+  font-weight: 400;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #333333;
+  transition: all .15s ease-in-out;
+}
+
+.nav-list a:hover{
+  color: #2776fd;
+}
+
+.left{
+  display: flex;
+  gap:2rem;
+  align-items: center;
+}
+
+.active a{
+  color: rgb(246, 71, 95) !important;
+  padding-bottom: 4px;
+  border-bottom: 3px solid rgb(246, 71, 95);
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-1{
+  gap:1rem;
+}
+
+.gap-2{
+  gap:2rem;
+}
+
+.gap-3{
+  gap:4rem;
+}
+
+.mt-section{
+  margin-top: 3rem;
+}
+
+.mt-component{
+  margin-top: 2rem;
+}
+
+.text-primary{
+    color: #333333;
+}
+
+.text-secondary{
+  opacity: .5;
+}
+
+.jumbotron{
+  text-align: center;
+  background-color: rgb(255, 218, 185);
+  padding: 1rem;
+  width: 100%;
+}
+
+.festivalCard{
+  display: flex;
+  gap: .8rem;
+  padding: .8rem 2.8rem;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.nav-list .middle{
+  flex-grow: 2;
+  padding: 0.7rem 1rem;
+  margin:0  2rem ;
+  border-radius: 1rem;
+  background-color: #ebebeb;
+}
+
+.nav-list .right{
+  position: relative;
+}
+
+
+.myCarousel{
+  padding-bottom: 4rem;
+  /* text-align: center; */
+}
+.carousel .thumbs-wrapper{
+  margin-left: 0 !important;
+}
+
+.hero-wrapper{
+  padding: 2rem 25.5rem;
+}
+
+.titleViewAll{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.giftItem{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
+
+.giftPricing{
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-header{
+  background-color: #fbfbfbb7;
+  backdrop-filter: blur(8px);
+  transition: all .25s;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.festivalCards{
+  max-width: 68rem;
+  padding-bottom: 1.3rem;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+div.festivalCards::-webkit-scrollbar {
+  width: 1px;
+  height: 7px;
+}
+
+div.festivalCards::-webkit-scrollbar-track {
+  background: #dcdcdc66;
+  background: rgba(255, 255, 255, 0.77);
+  border-radius: 6px;
+}
+  
+/* Handle */
+div.festivalCards::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  background: rgba(255, 255, 255, 0.77);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+div.festivalCards::-webkit-scrollbar-thumb:hover {
+  background: rgb(253, 200, 200);
+}
+
+.text-danger{
+  color:rgb(221, 77, 74);
+}
+
+.card1{
+ background:linear-gradient(90deg, rgb(204, 153, 255) 2.16%, rgb(51, 204, 255) 94.75%);}
+
+.card2{
+ background:linear-gradient(90deg, rgb(141, 198, 63) 2.16%, rgb(215, 223, 35) 94.75%);
+}
+.card3{
+ background: linear-gradient(90deg, rgb(221, 77, 74) 2.16%, rgb(196, 61, 61) 94.75%);
+}
+
+.card4{
+background: linear-gradient(90deg, rgb(255, 172, 27) 2.16%, rgb(245, 85, 49) 94.75%);
+}
+
+.card5{
+  background: linear-gradient(270deg, rgb(255, 123, 123) 9.78%, rgb(255, 16, 130) 92.59%);;
+}
+
+.addCartSvg{
+  height: 100%;
+  width: 38px;
+  cursor: pointer;
+}
+
+.addCartSvg:hover path {
+  fill: #fd2727;
+}
+
+.addCartSvg:active path {
+  fill: #2792fd;
+}
+
+.addCartSvg path{
+  fill:#666666;
+}
+
+.tableWrapper{
+  width: 100%;
+  padding:2rem 0;
+}
+
+table thead th{
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+table tbody th{
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+}
+
+table tbody td{
+  font-size: 1.3rem !important;
+  padding: 1.3rem !important;
+}
+
+.iconBreadcrumb{
+  align-self: flex-start;
+}
+
+.cartWrapper{
+  width: 100%;
+  padding:0 6rem;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+
+.css-levciy-MuiTablePagination-displayedRows,.css-pdct74-MuiTablePagination-selectLabel{
+  font-size: 1.3rem !important;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar .MuiTablePagination-actions
+{
+  display: flex !important;
+  gap:1rem !important;
+}
+
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input{
+  color: #fd2727;
+  font-weight: 500;
+}
